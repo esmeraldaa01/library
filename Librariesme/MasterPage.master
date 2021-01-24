@@ -1,0 +1,76 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+           <meta name="keywords" content="" />
+          <meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FFFFFF;
+        }
+        .auto-style2 {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="index.html" class="current" style="width: 232px">BookStore</a></li>
+            <li><a href="subpage.html">Kerko</a></li>
+            <li><a href="subpage.html">Rekomandime</a></li>            
+            <li><a href="subpage.html">Kategori</a></li>  
+            <li><a href="#">Rreth nesh</a></li> 
+            <li><a href="#">Kontakt</a></li>
+    	
+                <li><asp:Button ID="Button1" runat="server" Height="20px" Text="Hyr" /></li>
+           
+    	</ul>
+    </div> <!-- end of menu -->
+    
+    <div id="templatemo_header">
+    	<div id="templatemo_special_offers">
+        	<p>
+                <span>25%</span> discounts for
+        purchase over $80
+        	</p>
+			<a href="subpage.html" style="margin-left: 50px;">Lexo me shume...</a>
+        </div>
+        
+        
+        <div id="templatemo_new_books">
+        	<ul>
+                <li>Suspen disse</li>
+                <li>Maece nas metus</li>
+                <li>In sed risus ac feli</li>
+            </ul>
+            <a href="subpage.html" style="margin-left: 50px;">Lexo me shume...</a>
+        </div>
+    </div> <!-- end of header -->
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+        <div id="templatemo_footer">
+    
+	        BookStore |&nbsp; | <a href="subpage.html"><span class="auto-style1">Libra</span></a>| <a href="#">K<span class="auto-style1">ategori</span></a> | <a href="#">R<span class="auto-style1">reth nesh</span></a> | <a href="#">K<span class="auto-style1">ontakt</span></a><br />
+        Copyright ©️ 2024 <a href="#"><strong>Book Store</strong></a> 
+        <!-- Credit: www.templatemo.com -->	</div> 
+    <!-- end of footer -->
+<!--  Free CSS Template www.templatemo.com -->
+</div> <!-- end of container -->
+<!-- templatemo 086 book store -->
+  </form>
+ 
+</body>
+</html>
